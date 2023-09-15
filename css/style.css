@@ -779,6 +779,10 @@ img {
 .statistics_container img {
     width: 400px;
 }
+.calendar img{
+    width: 100%;
+    height: 100%;
+}
 
 /* ====== CONTANT ====== */
 .contact_container {
@@ -939,6 +943,11 @@ img {
     .container {
         margin-right: var(--mb-1);
         margin-left: var(--mb-1);
+    }
+   
+    .calendar img{
+        width: 100%;
+        height: 100px;
     }
 
     .nav_menu {
