@@ -696,25 +696,28 @@ img {
     transform: rotate(-180deg);
 }
 
+
 /*==================== PROJECTS ====================*/
 .portfolio_container {
     overflow: initial;
 }
 
 .portfolio_content {
-    padding: 0 1.5rem;
+    padding: 3rem 2rem;
 }
 
 .portfolio_img {
-    height: 200px;
+    height: auto;
+    margin-right: 3rem;
     border-radius: 0.5rem;
-    border: 1px solid red;
     justify-self: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: 0.5s;
 }
 
-.project_img{
-    width: 85%;
-    margin: auto;
+.portfolio_img:hover {
+    cursor: pointer;
+    transform: scale(1.025);
 }
 
 .portfolio_title {
@@ -724,6 +727,11 @@ img {
 
 .portfolio_description {
     margin-bottom: var(--mb-0-75);
+}
+
+.portfolio_data p {
+    margin-top: var(--mb-1-5);
+    margin-bottom: var(--mb-1);
 }
 
 .portfolio_data .button {
@@ -741,17 +749,22 @@ img {
     color: var(--first-color);
 }
 
-.swiper-portfolio-icon {
-    font-size: 2rem;
-    color: var(--first-color);
+.swiper-button-prev:hover {
+    transform: translateX(-0.5rem);
+}
+
+.swiper-button-next:hover {
+    transform: translateX(0.5rem);
 }
 
 .swiper-button-prev {
     left: -0.5rem;
+    transition: 0.5s;
 }
 
 .swiper-button-next {
     right: -0.5rem;
+    transition: 0.5s;
 }
 
 .swiper-container-horizontal>.swiper-pagination-bullets {
@@ -939,15 +952,16 @@ img {
 
 /* ============ MEDIA QUERIES ============ */
 /* ====== For small devices ====== */
-@media screen and (max-width:350px) {
+@media screen and (max-width:400px) {
     .container {
         margin-right: var(--mb-1);
         margin-left: var(--mb-1);
     }
-   
+
+  
     .calendar img{
         width: 100%;
-        height: 100px;
+        height: 90px;
     }
 
     .nav_menu {
